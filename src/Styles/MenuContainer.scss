@@ -1,0 +1,39 @@
+.iconContainer {
+    min-width: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    //box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 15px 5px;
+    transition: 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiSvgIcon-root {
+    color: #a8a8a8;
+    font-size: 18px;
+}
+
+.iconContainer:hover {
+    background-color: #a8a8a8;
+}
+.iconContainer.active {
+    background-color: #ff2f2f;
+}
+
+.iconContainer:hover .MuiSvgIcon-root,
+.iconContainer.active .MuiSvgIcon-root {
+    color: white;
+}
+
+.subWrap:nth-child(1) > .iconContainer:nth-child(1) {
+    width: 60px;
+    border-radius: 30px;
+}
+.subWrap:nth-child(1) > .iconContainer.active:nth-child(1) {
+    background-color: black;
+}
